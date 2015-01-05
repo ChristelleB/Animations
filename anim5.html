@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+
+		<title>Bibliothèque animations</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+
+	</head>
+
+	<body>
+
+
+		<header>
+			<h1>Bibliothèque d'animations</h1>
+		</header>
+		<div class="container">
+
+			<main class="section section__main">
+
+				<p>Dans le cadre du workshop Rebootfactory, qui consiste à créer une web application, les professeurs nous on demander de créer une bibliothèque d'animations.</p>
+
+				<p>Dans ma bibliothèque, je vais faire 5 variantes d'un menu.</p>
+
+			</main>
+
+			<section class="section section__float section__un">
+
+				<section class="section section__gauche">
+					<p>Voici une de mes variantes qui consiste à faire venir les élément avec un délai.</p>
+				</section>
+				
+
+				<section class="section section__cadre section__droite">
+
+					<button class="opener">Ouvrir le Menu</button>
+
+					<p>Web app sur des bières</p>
+
+					<nav class="section section__nav nav5">
+
+						<button class="closer">Fermer le Menu</button>
+						<ul class="menu">
+							<li><a class="lien" href="#">Se connecter</a></li>
+							<li><a class="lien" href="#">Bières bues</a></li>
+							<li><a class="lien" href="#">Bières favorites</a></li>
+							<li><a class="lien" href="#">Scanner l'étiquette</a></li>
+							<li><a class="lien" href="#">Recherche filtrée</a></li>
+							<li><a class="lien" href="#">Toutes les bières</a></li>
+							<li><a class="lien" href="#">Lexique</a></li>
+						</ul>
+					</nav>
+				</section>
+
+			</section> <!-- fin section 1-->
+
+			<section class="navi">
+				<ul class="ligne">
+					<li  ><a href="index.html">Animation 1</a></li>
+					<li><a href="anim2.html">Animation 2</a></li>
+					<li><a href="anim3.html">Animation 3</a></li>
+					<li><a href="anim4.html">Animation 4</a></li>
+					<li  class="active"><a href="anim5.html">Animation 5</a></li>
+				</ul>
+			</section>
+
+
+			
+
+		</div>
+
+		<script type="text/javascript">
+			var main = document.getElementsByClassName("section__main"),
+				nav = document.getElementsByClassName("section__nav"),
+				btnCloser = document.getElementsByClassName("closer"),
+				btnOpener = document.getElementsByClassName("opener");
+			
+
+			btnOpener[0].addEventListener("click", function(){
+				main[0].classList.add("nav--open");
+				nav[0].classList.add("nav--open");
+			});
+
+			btnCloser[0].addEventListener("click", function(){
+				main[0].classList.remove("nav--open");
+				nav[0].classList.remove("nav--open");
+			});
+
+		</script>
+		
+		
+	</body>
+
+</html>
